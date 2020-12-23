@@ -8,6 +8,7 @@ This is first ionic project , I learn about install and other step
 
 - install nodejs see [NodejsLink](https://nodejs.org/en/)
 - install ionic framwork command **npm install -g @ionic/cli** see [ionic Doc](https://ionicframework.com/docs/intro/cli)
+
 **Create ionic project**
 
 You should to know basic windows command or linux command

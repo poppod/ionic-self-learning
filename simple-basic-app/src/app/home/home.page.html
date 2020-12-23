@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="medium" >Simple Blank app</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>{{this.text}}</strong>
+    <p>Click to change Text</p>
+    <ion-button  color="primary" (click)="onClick()">change</ion-button>
+    
+  </div>
+</ion-content>

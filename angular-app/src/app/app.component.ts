@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-app';
-  persons: string[] = ["John", "Kim", "Jane"];
+ /// persons: string[] = ["John", "Kim", "Jane"]; // this is two way bilnding
 
-  onAddPerson(name :string) {
-    this.persons.push(name);
-  }
+  // onAddPerson(name :string) {
+  //   this.persons.push(name);
+  // }
 }

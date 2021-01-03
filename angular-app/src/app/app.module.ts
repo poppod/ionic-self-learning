@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PersonsComponent } from './persons/persons.component';
@@ -12,9 +13,9 @@ import { AppRoutingModule } from './app-routing.mudule';
     AppComponent,PersonsComponent,PersonInputComponent
   ],
   imports: [
-    BrowserModule,FormsModule,AppRoutingModule
+    BrowserModule,FormsModule,HttpClientModule,AppRoutingModule
   ],
-  providers: [],
+  ///providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

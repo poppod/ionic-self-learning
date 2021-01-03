@@ -1,4 +1,6 @@
-import { Component, Output ,EventEmitter} from "@angular/core";
+import { Component } from "@angular/core";
+//, Output ,EventEmitter
+import { PersonsService } from "./persons.service";
 ///import { EventEmitter } from "events";
 
 
@@ -9,11 +11,16 @@ import { Component, Output ,EventEmitter} from "@angular/core";
 
 })
 export class PersonInputComponent{
-  @Output() addPersonEvnt = new EventEmitter<string>();
+  //@Output() addPersonEvnt = new EventEmitter<string>();
   personName = '';
+  constructor(private prsService :PersonsService) {
+
+  }
   onAddPersonName() {
     console.log(this.personName);
-    this.addPersonEvnt.emit(this.personName);
+    this.prsService.onAddPerson(this.personName);
+   // this.addPersonEvnt.emit(this.personName);
     this.personName = '';
+
   }
 }
